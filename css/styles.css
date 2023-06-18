@@ -154,7 +154,7 @@ li {
 
 .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(/images/people-office.jpg);
+        url(./images/people-office.jpg);
     /* розмітка */
     padding: 188px 0;
 }
@@ -444,16 +444,3 @@ li {
 }
 
 /* =========SVG============= */
-
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
-
-.icon-group {
-    width: 0.8720703125em;
-}
