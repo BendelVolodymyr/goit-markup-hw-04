@@ -322,7 +322,7 @@ li {
 }
 
 .list_icon li {
-    border: 1px solid #8E8F99;
+    border: 1px solid #8e8f99;
     border-radius: 4px;
     max-height: 88px;
 }
@@ -334,6 +334,11 @@ li {
     width: 1440px;
     height: 312px;
     padding: 100px 0;
+}
+
+.footer_content {
+    display: flex;
+    gap: 120px;
 }
 
 .footer-box {
@@ -358,6 +363,11 @@ li {
 .footer__link {
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.footer__icon {
+    display: flex;
+    gap: 16px;
 }
 
 /* =========portfolio========== */
@@ -444,3 +454,12 @@ li {
 }
 
 /* =========SVG============= */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
