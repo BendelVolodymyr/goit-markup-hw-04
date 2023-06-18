@@ -37,6 +37,38 @@ h6 {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.header {
+    display: flex;
+    height: 72px;
+    align-items: center;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 /* header */
 
@@ -121,7 +153,8 @@ h6 {
 /* ========section one (wrapper)=========== */
 
 .section-one {
-    background-color: var(--color-main);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(/images/people-office.jpg);
     /* розмітка */
     padding: 188px 0;
 }
@@ -167,6 +200,14 @@ h6 {
     padding: 120px 0;
 }
 
+.section-two-icon-box {
+    display: flex;
+    gap: 24px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+}
+
 .section-two-title {
     font-weight: 500;
     font-size: 20px;
@@ -190,10 +231,6 @@ h6 {
 
 .section-two-flex {
     display: flex;
-    justify-content: center;
-    width: 1128px;
-    height: 104px;
-    margin-bottom: 120px;
     gap: 24px;
 }
 
@@ -205,6 +242,11 @@ h6 {
 }
 
 .section-three-ul {
+    display: flex;
+    gap: 24px;
+}
+
+.div__four ul {
     display: flex;
     gap: 24px;
 }
@@ -270,6 +312,19 @@ h6 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+}
+
+/* =========section five======= */
+
+.section-five ul {
+    display: flex;
+    gap: 24px;
+}
+
+.list_icon li {
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    max-height: 88px;
 }
 
 /* =========footer=========== */
@@ -388,39 +443,17 @@ h6 {
     padding: 32px 16px;
 }
 
-/* ============================ */
+/* =========SVG============= */
 
-
-
-a {
-    text-decoration: none;
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
 }
 
-img {
-    display: block;
-}
-
-p {
-    margin: 0;
-    padding: 0;
-}
-
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: block;
-}
-
-.header {
-    display: flex;
-    height: 72px;
-    align-items: center;
-}
-
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+.icon-group {
+    width: 0.8720703125em;
 }
