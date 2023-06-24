@@ -119,6 +119,7 @@ li {
     /* розмітка */
     padding: 24px 0;
     position: relative;
+    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -170,7 +171,10 @@ li {
 .section-one {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
-    /* розмітка */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
     padding: 188px 0;
 }
 
@@ -199,6 +203,7 @@ li {
     border-radius: 4px;
     display: block;
     margin: 48px auto 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .wrap__button:hover {
@@ -484,10 +489,7 @@ li {
     width: 100%;
 }
 
-.footer-link-icon:hover {
-    background-color: #31D0AA;
-}
-
+.footer-link-icon:hover,
 .footer-link-icon:focus {
     background-color: #31D0AA;
 }
@@ -601,9 +603,9 @@ li {
 }
 
 .is-hidden {
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
-    pointer-events: none; */
+    pointer-events: none;
 }
 
 .window__box {

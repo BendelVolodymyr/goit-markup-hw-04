@@ -44,7 +44,7 @@
         <section class="section-one">
             <div class="wrapper container">
                 <h1 class="wrap__content">Effective Solutions for Your Business</h1>
-                <button class="wrap__button" type="button">Order Service</button>
+                <button class="wrap__button" type="button" data-modal-open="data-modal-open">Order Service</button>
             </div>
         </section>
 
@@ -299,15 +299,16 @@
             </div>
         </div>
     </footer>
-    <div class="window is-hidden" data-model-open>
-        <div class="window__box">
-            <button class="window__button" type="button" data-model-close>
+    <div class="window is-hidden" data-model="data-modal">
+        <div class="window__box" data-model="data-modal">
+            <button class="window__button" type="button" data-model-close="data-modal-close">
                 <svg class="window__icon" width="8" height="8" viewBox="0 0 32 32">
                     <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
