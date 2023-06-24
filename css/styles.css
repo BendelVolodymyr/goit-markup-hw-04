@@ -496,14 +496,21 @@ li {
 }
 
 /* =========portfolio========== */
-.section-portfolio {
+.portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
 }
 
 /* =========section content==== */
+.portfolio__menu {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 24px;
+    margin: 0 auto 72px auto;
+}
 
-.button-portfolio {
+.menu__button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -519,17 +526,13 @@ li {
     max-width: 126px;
     box-sizing: border-box;
     justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-portfolio:hover {
+.menu__button:hover,
+.menu__button:focus {
     color: #FFFFFF;
     background-color: #404BBF;
-    border: 1px solid transparent;
-}
-
-.button-portfolio:focus {
-    background-color: #404BBF;
-    color: #FFFFFF;
     border: 1px solid transparent;
 }
 
@@ -551,7 +554,7 @@ li {
     line-height: 1.5;
 }
 
-.portfolio-foto {
+.portfolio__foto {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -559,17 +562,17 @@ li {
     justify-content: center;
 }
 
-.portfolio-foto-link {
-    max-height: 300px;
+.foto__box {}
+
+.box__link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-menu {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    gap: 24px;
-    margin: 0 auto 72px auto;
-
+.box__link:hover,
+.box__link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
 }
 
 .portfolio-block {
@@ -620,7 +623,7 @@ li {
     background-color: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .window__button {
@@ -638,7 +641,7 @@ li {
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #E7E9FC;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bez ier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .window__button:hover,
