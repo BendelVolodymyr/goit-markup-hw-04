@@ -578,8 +578,6 @@ li {
 
 .box__link:hover .animace__text,
 .box__link:focus .animace__text {
-
-
     transform: translateY(0%);
 }
 
