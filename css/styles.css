@@ -679,13 +679,9 @@ li {
 .window__button:focus {
     border: none;
     background-color: #404bbf;
+    fill: #FFFFFF;
 }
 
 .window__icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.window__icon:hover,
-.window__icon:focus {
-    fill: #FFFFFF;
 }
