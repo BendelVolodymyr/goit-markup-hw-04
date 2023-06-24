@@ -577,6 +577,7 @@ li {
     transform: translateY(0%);
 }
 
+
 .box__animace {
     position: relative;
     overflow: hidden;
@@ -602,7 +603,7 @@ li {
 }
 
 .box__animace:hover .animace__text {
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 
 .portfolio-block {
