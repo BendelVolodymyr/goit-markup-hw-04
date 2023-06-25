@@ -568,7 +568,10 @@ li {
     justify-content: center;
 }
 
-.foto__box {}
+.foto__box>a:hover,
+.foto__box>a:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .box__link {
     display: block;
@@ -577,6 +580,7 @@ li {
 
 .box__link:hover .animace__text,
 .box__link:focus .animace__text {
+
     transform: translateY(0%);
 }
 
@@ -635,6 +639,7 @@ li {
     top: 0;
     left: 0;
     min-width: 100%;
+    width: auto;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
