@@ -110,29 +110,34 @@ li {
     align-items: center;
 }
 
-.list_menu {
+.link_menu {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #2E2F42;
     /* розмітка */
     padding: 24px 0;
     position: relative;
-    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list_menu:hover,
-.list_menu:focus {
+.link_menu:hover,
+.link_menu:focus {
     color: #404bbf;
-    border-bottom: 4px solid #404BBF;
     border-radius: 2px;
+    border-bottom: 4px solid #404BBF;
 }
 
-.list_menu::after {
+.after_menu {
+    color: #404bbf;
+}
+
+.after_menu::after {
     position: absolute;
     left: 0;
-    bottom: -1px;
+    width: 100%;
+    bottom: -4px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
@@ -555,6 +560,7 @@ li {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    color: #434455;
 }
 
 .portfolio__foto {
